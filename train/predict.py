@@ -7,9 +7,9 @@ import mimetypes
 
 # 🔧 Settings
 model_path = 'waste_classifier.pth'
-category_names = ['Plastic', 'Glass', 'Metal', 'Paper', 'E-Waste']
+category_names = ['Plastic', 'Glass', 'Metal', 'Paper', 'Cardboard']
 img_size = 224
-image_folder = 'test/uncategorized'
+image_folder = 'test/trash'
 
 # ✅ Image transformation
 transform = transforms.Compose([
