@@ -9,7 +9,7 @@ import mimetypes
 model_path = 'waste_classifier.pth'
 category_names = ['Plastic', 'Glass', 'Metal', 'Paper', 'Cardboard']
 img_size = 224
-image_folder = 'test/trash'
+image_folder = 'dataset/trash'
 
 # ✅ Image transformation
 transform = transforms.Compose([

@@ -6,7 +6,7 @@ import torch
 from torchvision import models, transforms
 
 # Load model
-category_names = ['Plastic', 'Glass', 'Metal', 'Paper', 'E-Waste']
+category_names = ['Cardboard', 'Food', 'Glass', 'Metal', 'Others', 'Paper', 'Plastic']
 model = models.resnet18()
 model.fc = torch.nn.Linear(model.fc.in_features, len(category_names))
 model.load_state_dict(torch.load("waste_classifier.pth", map_location=torch.device('cpu')))
